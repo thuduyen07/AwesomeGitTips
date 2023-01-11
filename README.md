@@ -12,12 +12,13 @@ git log branch1..branch2
 ```
 git rebase -i head~n
 ```
-n: number of commits need to combine
+- n: number of commits need to combine
 
 > Step 2.
-Remain 1 commit and change `pick` to `squash` for the rest commits
 
-Save file (and commit if needed)
+- Remain 1 commit and change `pick` to `squash` for the rest commits
+
+- Save file (and commit if needed)
 
 > Step 3.
 ```
