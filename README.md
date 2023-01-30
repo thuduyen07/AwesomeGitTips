@@ -1,5 +1,24 @@
 # AwesomeGitTips
 
+### Git Large file storage 
+
+> Install
+```
+git lfs install
+```
+
+> Track large file type
+```
+git lfs track "*.<file-type>"
+```
+
+> Add tracking file
+```
+git add .gitattributes
+```
+_Note:_ See more about [git lfs migrate](https://github.com/git-lfs/git-lfs/blob/main/docs/man/git-lfs-migrate.adoc?utm_source=gitlfs_site&utm_medium=doc_man_migrate_link&utm_campaign=gitlfs) when your file is still refused
+
+
 ### Git Submodule
 
 > Go to target folder that you wanna add sub-repo
@@ -49,3 +68,4 @@ git rebase --continue
 2. [Refresh after update gitignore file](https://shrestharohit.com.np/file-added-to-gitignore-still-showing-in-untracked-list/)
 3. [A successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/)
 4. [Tái sử dụng code cho nhiều project với Git Submodules](https://techmaster.vn/posts/36659/tai-su-dung-code-cho-nhieu-project-voi-git-submodules#:~:text=Git%20Submodules%20cho%20ph%C3%A9p%20t%E1%BA%A1o,d%E1%BB%A5ng%20theo%20d%E1%BA%A1ng%20Sub%20module)
+5. [Git lfs document](https://git-lfs.com/)
