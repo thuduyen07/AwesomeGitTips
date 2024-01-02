@@ -1,5 +1,12 @@
 # AwesomeGitTips
 
+## Git Basic
+### Remove local branch with the specific pattern
+
+```
+git branch -d $((git branch --list "duyen/*").trim())
+```
+
 ### Git Large file storage 
 
 > Install
