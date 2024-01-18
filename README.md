@@ -7,6 +7,12 @@
 git branch -d $((git branch --list "duyen/*").trim())
 ```
 
+Joy remove local :v
+
+```git branch | grep -v "develop" | grep -v "master" | grep -v "main" | xargs git branch -D
+```
+Ref. https://stackoverflow.com/questions/10610327/delete-all-local-git-branches
+
 ### Git Large file storage 
 
 > Install
