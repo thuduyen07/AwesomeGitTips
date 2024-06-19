@@ -13,6 +13,11 @@ Joy remove local :v
 ```
 Ref. https://stackoverflow.com/questions/10610327/delete-all-local-git-branches
 
+### Discard changes
+```
+git clean -f
+```
+
 ### Git Large file storage 
 
 > Install
