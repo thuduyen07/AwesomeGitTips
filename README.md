@@ -9,7 +9,8 @@ git branch -d $((git branch --list "duyen/*").trim())
 
 Joy remove local :v
 
-```git branch | grep -v "develop" | grep -v "master" | grep -v "main" | xargs git branch -D
+```
+git branch | grep -v "develop" | grep -v "master" | grep -v "main" | xargs git branch -D
 ```
 Ref. https://stackoverflow.com/questions/10610327/delete-all-local-git-branches
 
@@ -18,9 +19,25 @@ Ref. https://stackoverflow.com/questions/10610327/delete-all-local-git-branches
 git clean -f
 ```
 
+### Optimize .git file when the .git file is too large
+
+> Step 1: compress all git objects and remove the old unsued .pack files
+
+```
+git repack -ad
+```
+
+> Step 2: clean up leftover and unnecessary objects
+
+```
+git gc --prune=now --aggressive
+```
+
+
 ### Git Large file storage 
 
 > Install
+
 ```
 git lfs install
 ```
